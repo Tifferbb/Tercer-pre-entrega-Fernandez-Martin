@@ -1,0 +1,16 @@
+{% extends 'nutria_app/base.html' %}
+
+{% block title %}Detalle del Paciente{% endblock %}
+
+{% block content %}
+<h1>Detalle del Paciente</h1>
+
+<p><strong>Nombre:</strong> {{ paciente.nombre }}</p>
+<p><strong>Apellido:</strong> {{ paciente.apellido }}</p>
+<p><strong>Email:</strong> {{ paciente.email }}</p>
+<p><strong>Teléfono:</strong> {{ paciente.telefono }}</p>
+<p><strong>Descripción:</strong> {{ paciente.descripcion }}</p>
+
+<a href="{% url 'lista_pacientes' %}">Volver a la lista</a>
+
+{% endblock %}

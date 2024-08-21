@@ -1,0 +1,16 @@
+{% extends 'nutria_app/base.html' %}
+
+{% block title %}Detalle del Nutricionista{% endblock %}
+
+{% block content %}
+<h1>Detalle del Nutricionista</h1>
+
+<p><strong>Nombre:</strong> {{ nutricionista.nombre }}</p>
+<p><strong>Apellido:</strong> {{ nutricionista.apellido }}</p>
+<p><strong>Email:</strong> {{ nutricionista.email }}</p>
+<p><strong>Teléfono:</strong> {{ nutricionista.telefono }}</p>
+<p><strong>Matrícula:</strong> {{ nutricionista.matricula }}</p>
+
+<a href="{% url 'lista_nutricionistas' %}">Volver a la lista</a>
+
+{% endblock %}

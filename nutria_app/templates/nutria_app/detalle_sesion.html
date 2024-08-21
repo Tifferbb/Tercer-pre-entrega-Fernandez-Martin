@@ -1,0 +1,14 @@
+{% extends 'nutria_app/base.html' %}
+
+{% block title %}Detalle de la Sesión{% endblock %}
+
+{% block content %}
+<h1>Detalle de la Sesión</h1>
+
+<p><strong>Paciente:</strong> {{ sesion.paciente.nombre }} {{ sesion.paciente.apellido }}</p>
+<p><strong>Nutricionista:</strong> {{ sesion.nutricionista.nombre }} {{ sesion.nutricionista.apellido }}</p>
+<p><strong>Fecha:</strong> {{ sesion.fecha }}</p>
+
+<a href="{% url 'lista_sesiones' %}">Volver a la lista</a>
+
+{% endblock %}
