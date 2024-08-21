@@ -1,1 +1,5 @@
 entorno-virtual/
+.vscode/
+.idea/
+__pycache__/
+*.pyc
