@@ -9,6 +9,6 @@ Orden para probar la App
 2) Registrar nutricionista
 3) Registrar paciente
 4) Registrar sesion (necesitamos en la base de datos al menos un nutricionista y un paciente)
-5) Nutricionistas
-6) Pacientes
-7) Sesiones
+5) Nutricionistas (muestra listado)
+6) Pacientes (muestra listado)
+7) Sesiones (muestra listado)
