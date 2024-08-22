@@ -2,6 +2,7 @@ from django.urls import path
 from nutria_app import views
 
 urlpatterns = [
+    path ('', views.home_vista),
     path ('home/', views.home_vista),
     path('nutricionistas/', views.lista_nutricionistas, name='lista_nutricionistas'),
     path('nutricionistas/registrar/', views.registrar_nutricionista, name='registrar_nutricionista'),
